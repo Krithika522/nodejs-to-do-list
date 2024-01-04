@@ -19,3 +19,12 @@ A basic to-do list application built with Node.js that allows users to create an
 
    ```bash
    git clone https://github.com/Krithika522/nodejs-to-do-list.git
+
+2. Install dependencies:
+    
+    npm i
+
+3. run the command:
+
+    npm nodemon app.js
+    go to localhost:3000
