@@ -1,0 +1,224 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    position: relative;
+}
+
+
+.task-card{
+    width: 900px;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    
+    
+}
+#heading{
+    color: white;
+    height: fit-content;
+    width: 500px;
+    text-align: center;
+    
+}
+#second-box{
+    margin-top: 90px;
+    width: 500px;
+    height: 900pxr;
+}
+
+.item{
+    margin: 0;
+    padding: 16px;
+    color: white;
+    border-bottom: 1.9px solid black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    
+   
+}
+.item:last-child{
+   border-bottom: 0;
+}
+.item p{
+    overflow-x: hidden;
+    padding: 4px;
+}
+
+.add-task{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 19px;
+    
+
+}
+.add-task input{
+    border-radius: 8px;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    width: 190px;
+    
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+input[type="checkbox"]{
+    margin: 0 15px;
+}
+.add-task button {
+    width: 39px;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: rgba(165, 19, 165, 0.66);
+    color: white;
+    text-decoration: none;
+    border: none;
+
+}
+
+.images{
+    width: 100%;
+    height: 20em;
+    background-image: linear-gradient(to right, rgba(43, 23, 158, 0.765), rgba(89, 63, 192, 0.621),rgb(88, 29, 142,0.4), rgba(103, 27, 131, 0.568), rgba(113, 27, 113, 0.66)), url('../image/todolistBackground.jpg');
+    background-size: 100% 100%;
+}
+
+footer{
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    color: white;
+    position: fixed;
+    top: 95vh;
+    bottom: 0;
+}
+footer p{
+    margin-top: 7px;
+}
+footer a{
+    color: white;
+    margin-right: 2px;
+}
+
+@media (max-width: 320px) {
+    
+   .images{
+       width: 191%;
+       height: 30em;
+   }
+   
+   #heading{
+     width: 396px;
+     
+   }
+#second-box{
+      width: 400px;
+     margin: 28% auto;
+    }
+
+    footer{
+        position: fixed;
+        top: 95.99%;
+        bottom: 0;
+    }
+      
+}
+
+@media (min-width: 321px) and (max-width: 424px) {
+
+    .images {
+        width: 228%;
+        height: 30em;
+    }
+
+    #heading {
+        width: 125%;
+        position: absolute;
+        left: 55%;
+    }
+
+    #second-box {
+        width: 125%;
+        position: absolute;
+        left: 55%;
+    }
+
+    footer {
+        position: fixed;
+        top: 95.99%;
+        bottom: 0;
+    }
+}
+
+
+
+@media (min-width: 425px) and (max-width: 768px){
+
+.images {
+        width: 228%;
+        height: 30em;
+    }
+
+    #heading {
+            width: 125%;
+            position: absolute;
+            left: 55%;
+    }
+
+    #second-box {
+        width: 125%;
+        position: absolute;
+        left: 55%; 
+    }
+
+    footer {
+        position: fixed;
+        top: 95.99%;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 814px) and (max-width: 1024px) {
+
+    .images {
+        width: 191%;
+        height: 30em;
+    }
+
+    #heading {
+        width: 78%;
+        position: absolute;
+        left: 59%;
+    }
+
+    #second-box {
+        width: 78%;
+        position: absolute;
+        left: 59%;
+    }
+
+    footer {
+        position: fixed;
+        top: 95.99%;
+        bottom: 0;
+    }
+}

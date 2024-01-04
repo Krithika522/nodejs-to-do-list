@@ -1,0 +1,44 @@
+<%- include("header.ejs") %>
+    <div class="main-container">
+    
+        <div class="images"> </div>
+    
+        <!-- Start making task-card -->
+        <main>
+            <section>
+                <!-- <div class="task-main-container">
+
+                </div> -->
+                <div class="task-card" id="heading">
+                    <h1><%= listTitle %></h1> 
+                    </div>
+
+                    <div class="task-card" id="second-box">
+                        
+                        <% for(var i=0;i<taskList.length;i++){ %>
+                            
+                            <div class="item">
+                                <input type="checkbox">
+                                <p>
+                                    <%= taskList[i] %>
+                                </p>
+                            </div>
+                             
+                        <% } %>
+                          
+                              <form class="add-task" action="/" method="post">
+                                  <input type="text" name="taskName" placeholder="Enter the task.." >
+                                  <button type="submit" name="list" value= <%= listTitle%> >+</button>
+                                  
+                            </form>
+                            </div>
+                            </section>
+                            </main>
+                            </div>
+                           
+  
+<%- include("footer.ejs") %>
+
+    
+
+  
