@@ -27,4 +27,6 @@ A basic to-do list application built with Node.js that allows users to create an
 3. run the command:
 
     npm nodemon app.js
-    go to localhost:3000
+    go to localhost:3030
+
+    when you use /work in the url you will get another todo list for work

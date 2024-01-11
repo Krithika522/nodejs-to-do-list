@@ -44,7 +44,7 @@ app.get("/work", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server started on port ${portNum}`);
+    console.log(`Server started on port ${PORT}`);
 });
 
 
