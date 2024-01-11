@@ -20,10 +20,7 @@ app.use(express.static('public'))
 });
 
 app.post("/", (req, res) =>{
-   console.log(req.body);
-
   let taskEntered =  req.body["taskName"];
-
    if(req.body.list === "Work"){
     workItems.push(taskEntered);
     res.redirect("/work");
