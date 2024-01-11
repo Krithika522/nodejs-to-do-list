@@ -6,7 +6,7 @@ import { workHeading } from "./date.js";
 
 
 const app = express();
-const portNum = 3000;
+const PORT = process.env.PORT || 3030;
 
 const items = ["Buy Car","Study node js"];
 const workItems = ["Buy Groceries"];
@@ -43,7 +43,7 @@ app.get("/work", (req, res) => {
 
 
 
-app.listen(portNum, () => {
+app.listen(PORT, () => {
     console.log(`Server started on port ${portNum}`);
 });
 
